@@ -1,0 +1,54 @@
+$link-decoration: none;
+$link-color: black;
+
+
+$body-text-color: rgb(8, 8, 8);
+$btn-w: 120px;
+$btn-h: 40px;
+
+
+$theme-colors: (
+  'primary': #166285,
+  'secondary': #4f4f52,
+  'success': #577717,
+  'info': #3f7679,
+  'warning': #ac5b2c,
+  'danger': #88193a,
+  'light': #c8c8c8,
+  'dark': #2f2f2f
+);
+
+a {
+  text-decoration: $link-decoration;
+  color: $link-color;
+}
+
+
+.btn-dark {
+  width: $btn-w;
+  height: $btn-h;
+  margin: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+p {
+  color: $body-text-color;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+@import 'bootstrap/scss/bootstrap';
