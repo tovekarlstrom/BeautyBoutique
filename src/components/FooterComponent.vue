@@ -1,5 +1,5 @@
 <template>
-  <footer>©Copyright Tove Karlström</footer>
+  <footer>Copyright © Tove Karlström</footer>
 </template>
 
 <style lang="scss">

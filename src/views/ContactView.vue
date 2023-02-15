@@ -26,20 +26,20 @@
     <h1>Contact</h1>
 
     <ul>
-      <li>Email: contact@beautyboutique.com</li>
+      <li>Email: contact@beautyboutique.xxx</li>
       <li>Tel: 070 865 47 XX</li>
     </ul>
     <div id="formContainer">
-      <div id="rewiews">
-        <h2>Rewiews</h2>
+      <div id="reviews">
+        <h2>Reviews</h2>
         <ul v-if="name !== null">
           <li :key="formData.name" v-for="formData in formDatas">
             {{ formData.name }} - {{ formData.text }}
           </li>
         </ul>
       </div>
-      <form id="formRewiew">
-        <h3>Write a rewiew</h3>
+      <form id="formReview">
+        <h3>Write a review</h3>
         <label for="name">Name</label>
         <input
           id="name"
@@ -51,7 +51,7 @@
         <textarea id="text" v-model="text" cols="30" rows="5" />
 
         <button @click="addFormData" type="button" class="btn btn-dark">
-          Add rewiew
+          Add review
         </button>
       </form>
     </div>
@@ -63,6 +63,7 @@
 
   main {
     background-color: $bg-color;
+    height: 70vh;
   }
   #formContainer {
     background-color: $bg-color;
@@ -72,21 +73,21 @@
     padding: 50px;
   }
 
-  #formRewiew {
+  #formReview {
     display: flex;
     flex-direction: column;
     width: 500px;
   }
 
-  #rewiews {
+  #reviews {
     min-height: 300px;
   }
 
   #name,
   #text {
-    background-color: rgb(183, 178, 178);
+    background-color: rgb(235, 233, 233);
     box-shadow: rgba(115, 117, 119, 0.2) 0px 8px 24px;
-    color: white;
+    color: rgb(41, 40, 40);
     border-style: hidden;
   }
 </style>

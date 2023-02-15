@@ -53,7 +53,7 @@
   }
 </script>
 <template>
-  <div id="dd">
+  <div>
     <ProductCard
       :key="product.id"
       v-for="product in result"
@@ -68,8 +68,8 @@
   </div>
 </template>
 
-<style>
-  #dd {
+<style scoped>
+  div {
     display: flex;
     flex-wrap: wrap;
     align-items: start;

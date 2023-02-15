@@ -37,6 +37,7 @@
       <p>{{ product.category }}</p>
       <p>{{ product.description }}</p>
       <div v-if="product.product_colors.length > 0">
+        <p>Colors</p>
         <span
           v-for="(color, index) in product.product_colors"
           :key="index"
@@ -48,16 +49,18 @@
             margin: '5px'
           }"
         />
-        <p v-if="product.rating !== null">Rating {{ product.rating }}</p>
-        <button @click="increment" type="button" class="btn btn-dark">
-          Add to cart
-        </button>
+        <div>
+          <p v-if="product.rating !== null">Rating {{ product.rating }}</p>
+          <button @click="increment" type="button" class="btn btn-dark">
+            Add to cart
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
   #closeInfoModal {
     width: 30px;
     height: 30px;
@@ -71,6 +74,8 @@
   }
   #modalProductInfo {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
   }
   #modalContainer {
     position: fixed;
@@ -80,7 +85,7 @@
     height: 500px;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: antiquewhite;
+    background-color: rgb(243, 237, 230);
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 200px;

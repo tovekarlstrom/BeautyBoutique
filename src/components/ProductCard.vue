@@ -40,13 +40,14 @@
     align-items: center;
     box-shadow: $card-box-shadow;
     margin: 20px;
-    margin-left: 10px;
     width: 300px;
+    height: 470px;
   }
 
   .productInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
   }
 </style>
